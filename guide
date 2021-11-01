@@ -203,6 +203,7 @@ BONUS PART
 Вот отсюда не все пакеты ставил: https://www.atlantic.net/dedicated-server-hosting/how-to-install-wordpress-with-lighttpd-web-server-on-ubuntu-20-04/?__cf_chl_captcha_tk__=pmd_AzY1rbfbQzqZoAlA5cK.akfed1rLVP1F68mz19qfSpU-1635599368-0-gqNtZGzNA2WjcnBszQil
 Этот тоже юзал, но нужно быть осторожнее с конфигами: https://www.vultr.com/docs/how-to-install-lighttpd-php-and-mariadb-on-ubuntu-20-04-lts
 Пакеты: lighttpd, php-fpm, php-mysql, php7.4-cgi, default-mysql-server, mariadb-server. Создавать бд wpuser надо - после этого заработал вордпресс( но после ребута ломается! Если это так, то мне помогло удаление одного лог-файла ib_logfile0 : https://stackoverflow.com/questions/26439742/getting-error-plugin-innodb-registration-as-a-storage-engine-failed-when-sta).
+В итоге и после этого Машка валилась. Сносил вордпресс, сносил Машку, потом заново ставил все. Потом начал бунтовать вордпресс, что бд под сайт в Машке уже создана. В итоге создал новую бд и поменял в конфигах вордпресса, чтоб он в неё писал. В итоге всё перестало отваливаться. Но мб временно.
 Если что-то пошло не так и надо подчистую снести пакет и конфиги: https://askubuntu.com/questions/187888/what-is-the-correct-way-to-completely-remove-an-application
 32. Про бонусный сервис, который я юзал: https://zen.yandex.ru/media/id/5a941fb2f0317316496e8bf7/kak-otpravliat-pochtu-iz-komandnoi-stroki-v-ubuntu-linux-5ad9de11bce67ec3e62fe19e
 33. Забыл создать группу stycho42 и добавить туда пользователя stycho:
